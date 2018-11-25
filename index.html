@@ -1,0 +1,41 @@
+<!doctype html>
+<head>
+    <title>ML Deployment Demo</title>
+</head>
+
+<style>
+</style>
+
+<body style="margin: 0rem 2rem;">
+  <h1>Demo of two ML model deployment options</h1>
+  <div class="navbar" style="background-color: rgba(0,0,0,0.1);">
+    <span id="waitMessage" style="margin-right: 2rem; font-size: 2rem; color: red;">Please wait a few seconds, loading AI ...</span>
+  </div>
+  <div class="main-section">
+    <div class="vertical-sections">
+      <div style="font-size: 1.25rem; margin: 1rem 0rem; width: 75%; left: 50%; transform: translateX(-50%); position: relative;">
+  	First, click <strong>Generate Text</strong> to have the backend run a model which generates some Nietzche text.
+      </div>
+      <div>
+        <div>
+        <button id="generate-text" style="left: 50%; transform: translateX(-50%); position: relative;">Generate Text At The Backend</button>
+        </div>
+        <div style="margin:2rem 0; font-size: 1.25rem; width:75%; left: 50%; transform: translateX(-50%); position: relative;">
+          Click this button to generate text via the local Keras model on your computer.
+        </div>
+        <div>
+          <button id="generate-local" style="left: 50%; transform: translateX(-50%); position: relative;">Generate Text Locally</button>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <h2>You seed:</h2>
+        <textarea id="seedTextInput" rows="5" cols="60"></textarea>
+        <h2>Nietzche speaks:</h2>
+        <textarea id="generatedTextInput" rows="5" cols="60"/>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="index.js"></script>
